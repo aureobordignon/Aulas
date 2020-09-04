@@ -1,8 +1,13 @@
 import React from 'react'
 import TextoCentral from '../components/TextoCentral'
 
-export default props => (
-   <TextoCentral corFundo={'blue'}  corTexto={'gray'}>
-      Tela C - {props.route.params.numero}
-   </TextoCentral>
-)
+export default props => {
+   const numero = props.route
+      && props.route.params
+      && props.route.params.numero ? props.route.params.numero : 0
+   return (
+      <TextoCentral corFundo={'blue'}  corTexto={'gray'}>
+         Tela C - {numero}
+      </TextoCentral>
+   )
+}
