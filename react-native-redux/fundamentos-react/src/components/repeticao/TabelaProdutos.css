@@ -1,0 +1,21 @@
+.TabelaProdutos table {
+    width: 100%;
+}
+
+.TabelaProdutos th {
+    background-color: rgb(141, 24, 24);
+    color: #fff
+}
+
+.TabelaProdutos td {
+    text-align: center;
+    padding: 8x;    
+}
+
+.TabelaProdutos tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.TabelaProdutos tr:last-child {
+    text-align: right;
+}
